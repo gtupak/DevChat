@@ -70,16 +70,17 @@
                         <outlet property="cameraBtn" destination="GP2-Gc-2dj" id="frA-uI-TRz"/>
                         <outlet property="previewView" destination="121-gE-jMB" id="AgD-7w-ZUi"/>
                         <outlet property="recordBtn" destination="DEO-E9-q3c" id="i3k-pa-FuI"/>
+                        <segue destination="q9j-k6-MYX" kind="presentation" identifier="LoginVC" id="FqX-4K-Q6f"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-218" y="-96"/>
+            <point key="canvasLocation" x="-503" y="-97"/>
         </scene>
-        <!--View Controller-->
+        <!--LoginVC-->
         <scene sceneID="7gW-FH-7YG">
             <objects>
-                <viewController id="q9j-k6-MYX" sceneMemberID="viewController">
+                <viewController id="q9j-k6-MYX" customClass="LoginVC" customModule="DevChat" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Nv2-Hd-sdC"/>
                         <viewControllerLayoutGuide type="bottom" id="TvU-Tl-yhN"/>
@@ -183,6 +184,9 @@
                                         <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loginPressed:" destination="q9j-k6-MYX" eventType="touchUpInside" id="SC2-BS-m5f"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -205,6 +209,10 @@
                             <constraint firstItem="oWS-FD-Ik6" firstAttribute="top" secondItem="gv0-I4-FRO" secondAttribute="bottom" constant="20" id="z0Z-o3-1aW"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="o4q-JD-6M0" id="lFZ-Lu-VfZ"/>
+                        <outlet property="passwordField" destination="gv0-I4-FRO" id="SxE-Fn-mc7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xp8-Wn-nuE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
