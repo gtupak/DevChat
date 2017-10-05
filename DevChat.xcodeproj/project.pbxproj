@@ -10,6 +10,8 @@
 		533C948160C451F14D1CB506 /* Pods_DevChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62CAFA1043545B0DC6E998C4 /* Pods_DevChat.framework */; };
 		C00A18471F84260400F87A7C /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00A18461F84260400F87A7C /* RoundedButton.swift */; };
 		C00A18491F842A4200F87A7C /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00A18481F842A4200F87A7C /* LoginVC.swift */; };
+		C00F401B1F86876300AC6DFD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00F401A1F86876300AC6DFD /* User.swift */; };
+		C00F401E1F86886600AC6DFD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00F401D1F86886600AC6DFD /* Constants.swift */; };
 		C03C2A171F83D0D000125E65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03C2A161F83D0D000125E65 /* AppDelegate.swift */; };
 		C03C2A191F83D0D000125E65 /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03C2A181F83D0D000125E65 /* CameraVC.swift */; };
 		C03C2A1C1F83D0D000125E65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C03C2A1A1F83D0D000125E65 /* Main.storyboard */; };
@@ -21,6 +23,8 @@
 		C03C2A371F83F04000125E65 /* RoundTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03C2A361F83F04000125E65 /* RoundTextField.swift */; };
 		C05EB4FC1F8526DC00F5AF65 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05EB4FB1F8526DC00F5AF65 /* AuthService.swift */; };
 		C05EB4FE1F867FE400F5AF65 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05EB4FD1F867FE400F5AF65 /* DataService.swift */; };
+		C05EB5001F86837A00F5AF65 /* UsersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05EB4FF1F86837A00F5AF65 /* UsersVC.swift */; };
+		C05EB5021F86845B00F5AF65 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05EB5011F86845B00F5AF65 /* UserCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +33,8 @@
 		62CAFA1043545B0DC6E998C4 /* Pods_DevChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DevChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C00A18461F84260400F87A7C /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		C00A18481F842A4200F87A7C /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		C00F401A1F86876300AC6DFD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C00F401D1F86886600AC6DFD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C03C2A131F83D0D000125E65 /* DevChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C03C2A161F83D0D000125E65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C03C2A181F83D0D000125E65 /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
@@ -46,6 +52,8 @@
 		C03C2A361F83F04000125E65 /* RoundTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundTextField.swift; sourceTree = "<group>"; };
 		C05EB4FB1F8526DC00F5AF65 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		C05EB4FD1F867FE400F5AF65 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		C05EB4FF1F86837A00F5AF65 /* UsersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersVC.swift; sourceTree = "<group>"; };
+		C05EB5011F86845B00F5AF65 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +85,22 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		C00F40191F86875600AC6DFD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C00F401A1F86876300AC6DFD /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C00F401C1F86885B00AC6DFD /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C00F401D1F86886600AC6DFD /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		C03C2A0A1F83D0D000125E65 = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +122,8 @@
 		C03C2A151F83D0D000125E65 /* DevChat */ = {
 			isa = PBXGroup;
 			children = (
+				C00F401C1F86885B00AC6DFD /* Utils */,
+				C00F40191F86875600AC6DFD /* Model */,
 				C05EB4FA1F85267A00F5AF65 /* Services */,
 				C03C2A331F83E1AF00125E65 /* Protocols */,
 				C03C2A291F83D74600125E65 /* Controller */,
@@ -120,6 +146,7 @@
 				C03C2A2B1F83D83800125E65 /* AAPLPreviewView.m */,
 				C03C2A361F83F04000125E65 /* RoundTextField.swift */,
 				C00A18461F84260400F87A7C /* RoundedButton.swift */,
+				C05EB5011F86845B00F5AF65 /* UserCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -131,6 +158,7 @@
 				C03C2A2C1F83D83800125E65 /* AAPLCameraViewController.m */,
 				C03C2A181F83D0D000125E65 /* CameraVC.swift */,
 				C00A18481F842A4200F87A7C /* LoginVC.swift */,
+				C05EB4FF1F86837A00F5AF65 /* UsersVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -293,9 +321,13 @@
 				C00A18471F84260400F87A7C /* RoundedButton.swift in Sources */,
 				C00A18491F842A4200F87A7C /* LoginVC.swift in Sources */,
 				C03C2A171F83D0D000125E65 /* AppDelegate.swift in Sources */,
+				C05EB5001F86837A00F5AF65 /* UsersVC.swift in Sources */,
 				C03C2A371F83F04000125E65 /* RoundTextField.swift in Sources */,
+				C00F401E1F86886600AC6DFD /* Constants.swift in Sources */,
 				C03C2A301F83D83900125E65 /* AAPLPreviewView.m in Sources */,
+				C00F401B1F86876300AC6DFD /* User.swift in Sources */,
 				C03C2A311F83D83900125E65 /* AAPLCameraViewController.m in Sources */,
+				C05EB5021F86845B00F5AF65 /* UserCell.swift in Sources */,
 				C05EB4FC1F8526DC00F5AF65 /* AuthService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
