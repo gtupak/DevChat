@@ -22,11 +22,11 @@ class CameraVC: AAPLCameraViewController, AAPLCameraVCDelegate {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        performSegue(withIdentifier: "LoginVC", sender: nil)
-//        guard Auth.auth().currentUser != nil else {
-//            performSegue(withIdentifier: "LoginVC", sender: nil)
-//            return
-//        }
+//        performSegue(withIdentifier: "LoginVC", sender: nil)
+        guard Auth.auth().currentUser != nil else {
+            performSegue(withIdentifier: "LoginVC", sender: nil)
+            return
+        }
     }
     
     @IBAction func recordBtnPressed(_ sender: UIButton) {
@@ -56,7 +56,7 @@ class CameraVC: AAPLCameraViewController, AAPLCameraVCDelegate {
     }
     
     func videoRecordingComplete(_ videoURL: URL!) {
-        
+        performSegue(withIdentifier: "UsersVC", sender: ["videoURL": videoURL])
     }
     
     func videoRecordingFailed() {
@@ -64,11 +64,23 @@ class CameraVC: AAPLCameraViewController, AAPLCameraVCDelegate {
     }
     
     func snapshotTaken(_ snapshotData: Data!) {
-        
+        performSegue(withIdentifier: "UsersVC", sender: ["snapshotData": snapshotData])
     }
     
     func snapshotFailed() {
         
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let usersVC = segue.destination as? UsersVC {
+            if let videoDict = sender as? Dictionary<String, URL> {
+                let url = videoDict["videoURL"]
+                usersVC.videoUrl = url
+            } else if let snapDict = sender as? Dictionary<String, Data> {
+                let snapData = snapDict["snapshotData"]
+                usersVC.snapData = snapData
+        }
+        }
     }
     
 }
