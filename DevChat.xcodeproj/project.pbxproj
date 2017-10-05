@@ -20,6 +20,7 @@
 		C03C2A351F83E7A100125E65 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C03C2A341F83E7A100125E65 /* GoogleService-Info.plist */; };
 		C03C2A371F83F04000125E65 /* RoundTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03C2A361F83F04000125E65 /* RoundTextField.swift */; };
 		C05EB4FC1F8526DC00F5AF65 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05EB4FB1F8526DC00F5AF65 /* AuthService.swift */; };
+		C05EB4FE1F867FE400F5AF65 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05EB4FD1F867FE400F5AF65 /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		C03C2A341F83E7A100125E65 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Desktop/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C03C2A361F83F04000125E65 /* RoundTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundTextField.swift; sourceTree = "<group>"; };
 		C05EB4FB1F8526DC00F5AF65 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		C05EB4FD1F867FE400F5AF65 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				C05EB4FB1F8526DC00F5AF65 /* AuthService.swift */,
+				C05EB4FD1F867FE400F5AF65 /* DataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -230,12 +233,14 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-DevChat/Pods-DevChat-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +288,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C05EB4FE1F867FE400F5AF65 /* DataService.swift in Sources */,
 				C03C2A191F83D0D000125E65 /* CameraVC.swift in Sources */,
 				C00A18471F84260400F87A7C /* RoundedButton.swift in Sources */,
 				C00A18491F842A4200F87A7C /* LoginVC.swift in Sources */,
